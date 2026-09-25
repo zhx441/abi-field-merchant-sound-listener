@@ -1,0 +1,2655 @@
+{
+  "source": "https://abibuilder.com/merchant",
+  "data_version": "1.0.0.151.4",
+  "sounds": [
+    {
+      "pickup": "Item_Misc_Med_Comp_Up",
+      "drop": "Item_Misc_Med_Comp_Down",
+      "id": 1
+    },
+    {
+      "pickup": "Item_Container_Big_Metal_Up",
+      "drop": "Item_Container_Big_Metal_Down",
+      "id": 2
+    },
+    {
+      "pickup": "Item_Misc_Med_Fabric_Up",
+      "drop": "Item_Misc_Med_Fabric_Down",
+      "id": 3
+    },
+    {
+      "pickup": "Prop_Acc_Fuel_UP",
+      "drop": "Prop_Acc_Fuel_Down",
+      "id": 4
+    },
+    {
+      "pickup": "Prop_Acc_Concrete_UP",
+      "drop": "Prop_Acc_Concrete_Down",
+      "id": 5
+    },
+    {
+      "pickup": "Item_Misc_Med_Metal_Crisp_Up",
+      "drop": "Item_Misc_Med_Metal_Crisp_Down",
+      "id": 6
+    },
+    {
+      "pickup": "Prop_Acc_Plastic_Large_UP_01",
+      "drop": "Prop_Acc_Plastic_Large_Down_02",
+      "id": 7
+    },
+    {
+      "pickup": "Item_Misc_Med_Wood_Up",
+      "drop": "Item_Misc_Med_Wood_Down",
+      "id": 8
+    },
+    {
+      "pickup": "Item_Misc_Small_Comp_Up",
+      "drop": "Item_Misc_Small_Comp_Down",
+      "id": 9
+    },
+    {
+      "pickup": "Item_Misc_ElectronicDevice_Up",
+      "drop": "Item_Misc_ElectronicDevice_Down",
+      "id": 10
+    },
+    {
+      "pickup": "Prop_Acc_Plastic_Small_UP",
+      "drop": "Prop_Acc_Plastic_Small_Down",
+      "id": 11
+    },
+    {
+      "pickup": "Prop_Acc_Tech_Small_UP",
+      "drop": "Prop_Acc_Tech_Small_Down",
+      "id": 12
+    },
+    {
+      "pickup": "Prop_Acc_PC_UP",
+      "drop": "Prop_Acc_PC_Down",
+      "id": 13
+    },
+    {
+      "pickup": "Item_Misc_Big_Wood_Up",
+      "drop": "Item_Misc_Big_Wood_Down",
+      "id": 14
+    },
+    {
+      "pickup": "Prop_Acc_Battery_Small_UP_01",
+      "drop": "Prop_Acc_Battery_Small_Down_01",
+      "id": 15
+    },
+    {
+      "pickup": "Item_Acc_Med_Comp_Up",
+      "drop": "Item_Acc_Med_Comp_Down",
+      "id": 16
+    },
+    {
+      "pickup": "Item_Misc_Med_Metal_Blunt_Up",
+      "drop": "Item_Misc_Med_Metal_Blunt_Down",
+      "id": 17
+    },
+    {
+      "pickup": "Item_Misc_Small_Metal_Blunt_Up",
+      "drop": "Item_Misc_Small_Metal_Blunt_Down",
+      "id": 18
+    },
+    {
+      "pickup": "Item_Container_Small_Metal_Up",
+      "drop": "Item_Container_Small_Metal_Down",
+      "id": 19
+    },
+    {
+      "pickup": "Item_Misc_Big_Blunt_Up",
+      "drop": "Item_Misc_Big_Blunt_Down",
+      "id": 20
+    },
+    {
+      "pickup": "Item_Misc_Small_Wood_Up",
+      "drop": "Item_Misc_Small_Wood_Down",
+      "id": 21
+    },
+    {
+      "pickup": "Item_Misc_Small_Metal_Crisp_Up",
+      "drop": "Item_Misc_Small_Metal_Crisp_Down",
+      "id": 22
+    },
+    {
+      "pickup": "Item_Misc_Small_Fabric_Up",
+      "drop": "Item_Misc_Small_Fabric_Down",
+      "id": 23
+    },
+    {
+      "pickup": "Item_Misc_Small_Glass_Up",
+      "drop": "Item_Misc_Small_Glass_Down",
+      "id": 24
+    },
+    {
+      "pickup": "Item_Misc_Med_Wood_Clock_Up",
+      "drop": "Item_Misc_Med_Wood_Clock_Down",
+      "id": 25
+    },
+    {
+      "pickup": "Item_Glass_Up",
+      "drop": "Item_Glass_Down",
+      "id": 26
+    },
+    {
+      "pickup": "Item_Food_Bag_Up",
+      "drop": "Item_Food_Bag_Down",
+      "id": 27
+    },
+    {
+      "pickup": "Prop_Acc_Statue_UP",
+      "drop": "Prop_Acc_Statue_Down",
+      "id": 28
+    },
+    {
+      "pickup": "Item_Coin_Up",
+      "drop": "Item_Coin_Down",
+      "id": 29
+    },
+    {
+      "pickup": "Item_Misc_Med_Glass_Up",
+      "drop": "Item_Misc_Med_Glass_Down",
+      "id": 30
+    },
+    {
+      "pickup": "Prop_Acc_Clock_UP",
+      "drop": "Prop_Acc_Clock_Down",
+      "id": 31
+    },
+    {
+      "pickup": "Prop_Acc_Teapot_UP",
+      "drop": "Prop_Acc_Teapot_Down",
+      "id": 32
+    },
+    {
+      "pickup": "Item_GoldChain_Up",
+      "drop": "Item_GoldChain_Down",
+      "id": 33
+    },
+    {
+      "pickup": "Item_Misc_Med_Paper_Up",
+      "drop": "Item_Misc_Med_Paper_Down",
+      "id": 34
+    },
+    {
+      "pickup": "Item_Misc_Small_Paper_Up",
+      "drop": "Item_Misc_Small_Paper_Down",
+      "id": 35
+    },
+    {
+      "pickup": "Item_Misc_Med_Statue_Up",
+      "drop": "Item_Misc_Med_Statue_Down",
+      "id": 36
+    },
+    {
+      "pickup": "Item_Misc_Big_Paper_Up",
+      "drop": "Item_Misc_Big_Paper_Down",
+      "id": 37
+    },
+    {
+      "pickup": "Prop_Acc_Radio_UP",
+      "drop": "Prop_Acc_Radio_Down",
+      "id": 38
+    }
+  ],
+  "items": [
+    {
+      "id": 408010005,
+      "name": "Oil",
+      "nameZh": "机油",
+      "soundId": 1,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6089,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010006,
+      "name": "Oil Drum",
+      "nameZh": "油桶",
+      "soundId": 2,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6507,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010008,
+      "name": "Propane Tank",
+      "nameZh": "丙烷罐",
+      "soundId": 2,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12360,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010009,
+      "name": "Fuel Tank",
+      "nameZh": "燃料桶",
+      "soundId": 2,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 5,
+      "contactPrice": 75542,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010012,
+      "name": "Kerosene Lamp",
+      "nameZh": "煤油灯",
+      "soundId": 1,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12295,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010014,
+      "name": "High Energy Fuel",
+      "nameZh": "高效能燃料",
+      "soundId": 2,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 62210,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010015,
+      "name": "Nitrocellulose",
+      "nameZh": "硝化棉",
+      "soundId": 3,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 11541,
+      "category": "Flammables"
+    },
+    {
+      "id": 408010016,
+      "name": "Large-Caliber Artillery Gunpowder Pack",
+      "nameZh": "大口径火炮发射药包",
+      "soundId": 3,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 192534,
+      "category": "Flammables"
+    },
+    {
+      "id": 408020015,
+      "name": "Impact-resistant Hard Rubber",
+      "nameZh": "耐冲击硬胶",
+      "soundId": 4,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12467,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020017,
+      "name": "Bag of Cement",
+      "nameZh": "一袋水泥",
+      "soundId": 5,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6546,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020019,
+      "name": "Titanium Alloy Plate",
+      "nameZh": "钛合金板",
+      "soundId": 6,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 5,
+      "contactPrice": 76141,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020021,
+      "name": "Rubber Pad",
+      "nameZh": "橡胶垫",
+      "soundId": 7,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 3,
+      "contactPrice": 1957,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020022,
+      "name": "Acoustic Panel",
+      "nameZh": "吸音板材",
+      "soundId": 8,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 3,
+      "contactPrice": 1977,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020024,
+      "name": "Wood Board",
+      "nameZh": "橡木片",
+      "soundId": 8,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1634,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020025,
+      "name": "Sound-Muffling Cotton",
+      "nameZh": "隔音棉",
+      "soundId": 9,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 76741,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408020026,
+      "name": "Palladium Wire",
+      "nameZh": "钯金线材",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 170496,
+      "category": "Building Materials"
+    },
+    {
+      "id": 408030003,
+      "name": "Power Cable",
+      "nameZh": "电源线",
+      "soundId": 11,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 878,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030004,
+      "name": "Graphics Card",
+      "nameZh": "显示卡",
+      "soundId": 12,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 75548,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030007,
+      "name": "Broken LCD",
+      "nameZh": "破损的萤幕",
+      "soundId": 13,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1655,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030008,
+      "name": "Working LCD",
+      "nameZh": "完好的萤幕",
+      "soundId": 13,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 11402,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030009,
+      "name": "PSU",
+      "nameZh": "PSU电源",
+      "soundId": 12,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12574,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030013,
+      "name": "SSD",
+      "nameZh": "固态硬碟",
+      "soundId": 12,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 10762,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030014,
+      "name": "Chip Processor",
+      "nameZh": "晶片处理器",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5404,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030016,
+      "name": "RAM",
+      "nameZh": "记忆体",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5442,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030023,
+      "name": "Floppy Drive",
+      "nameZh": "软碟机",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1675,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030024,
+      "name": "VGA Display Cable",
+      "nameZh": "vga连接线",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 888,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030025,
+      "name": "UPS Unit",
+      "nameZh": "UPS电源",
+      "soundId": 10,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 191808,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030026,
+      "name": "Studio Monitor",
+      "nameZh": "监听音响",
+      "soundId": 14,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 61295,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408030028,
+      "name": "Vector Processor",
+      "nameZh": "向量处理器",
+      "soundId": 10,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 193652,
+      "category": "Computer Parts"
+    },
+    {
+      "id": 408040001,
+      "name": "Battery",
+      "nameZh": "电池",
+      "soundId": 15,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 1,
+      "contactPrice": 253,
+      "category": "Energy Items"
+    },
+    {
+      "id": 408040002,
+      "name": "D-size Battery",
+      "nameZh": "D型电池",
+      "soundId": 15,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 1,
+      "contactPrice": 431,
+      "category": "Energy Items"
+    },
+    {
+      "id": 408040004,
+      "name": "Car Battery",
+      "nameZh": "汽车蓄电池",
+      "soundId": 6,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 77340,
+      "category": "Energy Items"
+    },
+    {
+      "id": 408040006,
+      "name": "Solar Panel",
+      "nameZh": "太阳能板",
+      "soundId": 16,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 10975,
+      "category": "Energy Items"
+    },
+    {
+      "id": 408040008,
+      "name": "Battery-Powered Positive Electrode Module",
+      "nameZh": "高密度电池正极模组",
+      "soundId": 17,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 192115,
+      "category": "Energy Items"
+    },
+    {
+      "id": 408050001,
+      "name": "Electric Drill",
+      "nameZh": "电钻",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12680,
+      "category": "Tools"
+    },
+    {
+      "id": 408050006,
+      "name": "Toolkit",
+      "nameZh": "工具套组",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12787,
+      "category": "Tools"
+    },
+    {
+      "id": 408050009,
+      "name": "Hydraulic Rebar Cutter",
+      "nameZh": "液压电动钢筋剪",
+      "soundId": 18,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 13106,
+      "category": "Tools"
+    },
+    {
+      "id": 408050011,
+      "name": "Pipe Wrench",
+      "nameZh": "管钳",
+      "soundId": 18,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 897,
+      "category": "Tools"
+    },
+    {
+      "id": 408050013,
+      "name": "Toolbox",
+      "nameZh": "工具箱",
+      "soundId": 19,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1695,
+      "category": "Tools"
+    },
+    {
+      "id": 408050019,
+      "name": "Blower",
+      "nameZh": "鼓风机",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12893,
+      "category": "Tools"
+    },
+    {
+      "id": 408050022,
+      "name": "Flashlight",
+      "nameZh": "手电筒",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 1,
+      "contactPrice": 551,
+      "category": "Tools"
+    },
+    {
+      "id": 408050023,
+      "name": "High Power Flashlight",
+      "nameZh": "高效能手电筒",
+      "soundId": 9,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1715,
+      "category": "Tools"
+    },
+    {
+      "id": 408050026,
+      "name": "Hydraulic Wrench",
+      "nameZh": "液压扳手",
+      "soundId": 18,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 52147,
+      "category": "Tools"
+    },
+    {
+      "id": 408050028,
+      "name": "Safety Hammer",
+      "nameZh": "安全锤",
+      "soundId": 9,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1372,
+      "category": "Tools"
+    },
+    {
+      "id": 408050029,
+      "name": "Portable Jack",
+      "nameZh": "可擕式千斤顶",
+      "soundId": 17,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 11508,
+      "category": "Tools"
+    },
+    {
+      "id": 408050030,
+      "name": "Pipe Cleaning Kit",
+      "nameZh": "疏通工具组",
+      "soundId": 17,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6127,
+      "category": "Tools"
+    },
+    {
+      "id": 408050031,
+      "name": "Oil Bottle",
+      "nameZh": "机油壶",
+      "soundId": 17,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 6165,
+      "category": "Tools"
+    },
+    {
+      "id": 408050032,
+      "name": "Glue Gun",
+      "nameZh": "打胶枪",
+      "soundId": 17,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 906,
+      "category": "Tools"
+    },
+    {
+      "id": 408050033,
+      "name": "Hydraulic Expander",
+      "nameZh": "液压扩张器",
+      "soundId": 17,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 5,
+      "contactPrice": 194472,
+      "category": "Tools"
+    },
+    {
+      "id": 408050039,
+      "name": "Blowtorch",
+      "nameZh": "火焰喷枪",
+      "soundId": 20,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 72460,
+      "category": "Tools"
+    },
+    {
+      "id": 408060021,
+      "name": "Photo Frame",
+      "nameZh": "相框",
+      "soundId": 21,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 934,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060030,
+      "name": "Game Cartridge",
+      "nameZh": "游戏卡带",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5556,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060037,
+      "name": "Hearing Aid",
+      "nameZh": "助听器",
+      "soundId": 9,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 11082,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060039,
+      "name": "Watch",
+      "nameZh": "腕表",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5632,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060041,
+      "name": "Bag of Fertilizer",
+      "nameZh": "小袋肥料",
+      "soundId": 23,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6584,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060042,
+      "name": "Camping Tarp",
+      "nameZh": "遮雨篷布",
+      "soundId": 3,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1776,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060043,
+      "name": "Film Stock",
+      "nameZh": "电影胶片",
+      "soundId": 1,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 61144,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060044,
+      "name": "Handheld Fill Light",
+      "nameZh": "手持补光灯",
+      "soundId": 17,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 11615,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060046,
+      "name": "Camping Stove",
+      "nameZh": "便携酒精炉",
+      "soundId": 17,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 13000,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060052,
+      "name": "Deluxe Tea Set",
+      "nameZh": "奢华茶具",
+      "soundId": 24,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 63124,
+      "category": "Household Items"
+    },
+    {
+      "id": 408060054,
+      "name": "Lute",
+      "nameZh": "比维拉琴",
+      "soundId": 25,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 11464,
+      "category": "Household Items"
+    },
+    {
+      "id": 408070001,
+      "name": "Glucose Injection",
+      "nameZh": "注射用葡萄糖",
+      "soundId": 9,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 795,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070002,
+      "name": "Syringe",
+      "nameZh": "针管",
+      "soundId": 26,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 804,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070003,
+      "name": "Thermometer",
+      "nameZh": "体温枪",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5708,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070008,
+      "name": "Medical Sponge",
+      "nameZh": "医用海绵",
+      "soundId": 27,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 1,
+      "contactPrice": 289,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070009,
+      "name": "Medical Scissors",
+      "nameZh": "医用剪刀",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 1,
+      "contactPrice": 495,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070010,
+      "name": "Bios.",
+      "nameZh": "生物样本",
+      "soundId": 9,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5746,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070011,
+      "name": "Disinfectant",
+      "nameZh": "消毒水",
+      "soundId": 9,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 1,
+      "contactPrice": 503,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070012,
+      "name": "Automated External Defibrillator",
+      "nameZh": "自动体外去颤器",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 173160,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070013,
+      "name": "Insulin Pump",
+      "nameZh": "胰岛素泵",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 47952,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408070016,
+      "name": "Metal Heart",
+      "nameZh": "人工心脏",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 185077,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 408080001,
+      "name": "Gold Cheetah Statue",
+      "nameZh": "金豹雕像",
+      "soundId": 28,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 87912,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080002,
+      "name": "Commemorative Coin",
+      "nameZh": "纪念硬币",
+      "soundId": 29,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 14462,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080003,
+      "name": "Vase",
+      "nameZh": "花瓶",
+      "soundId": 30,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1373625,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080004,
+      "name": "Gold Watch",
+      "nameZh": "金手表",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 80919,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080008,
+      "name": "Gold Lion Statue",
+      "nameZh": "金狮雕像",
+      "soundId": 28,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1540125,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080009,
+      "name": "Desk Clock",
+      "nameZh": "座钟",
+      "soundId": 31,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 29304,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080010,
+      "name": "Antique Teapot",
+      "nameZh": "古董茶壶",
+      "soundId": 32,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1415250,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080011,
+      "name": "Silver Badge",
+      "nameZh": "银徽章",
+      "soundId": 18,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 7064,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080012,
+      "name": "Silver Chain",
+      "nameZh": "银质手链",
+      "soundId": 33,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 14557,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080013,
+      "name": "Gold Bracelet",
+      "nameZh": "金手镯",
+      "soundId": 29,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 81918,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080014,
+      "name": "Porcelain",
+      "nameZh": "宫廷银器",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 293040,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080015,
+      "name": "Gold-rimmed Glasses",
+      "nameZh": "金丝边眼镜",
+      "soundId": 26,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 29570,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080016,
+      "name": "Stamp Album",
+      "nameZh": "集邮册",
+      "soundId": 34,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 92907,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080019,
+      "name": "Record Player",
+      "nameZh": "唱片机",
+      "soundId": 8,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 297480,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080020,
+      "name": "Pocket Watch",
+      "nameZh": "怀表",
+      "soundId": 33,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 14652,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080021,
+      "name": "Stamp",
+      "nameZh": "邮票",
+      "soundId": 35,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 7165,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080022,
+      "name": "Spur",
+      "nameZh": "马刺",
+      "soundId": 18,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 4764,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080024,
+      "name": "Gold Block",
+      "nameZh": "金块",
+      "soundId": 18,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 270840,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080025,
+      "name": "Diamond Ring",
+      "nameZh": "钻戒",
+      "soundId": 33,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 82917,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080026,
+      "name": "Brooch",
+      "nameZh": "胸针",
+      "soundId": 33,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 83916,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080028,
+      "name": "Gold Cube",
+      "nameZh": "黄金魔术方块",
+      "soundId": 36,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 266400,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080029,
+      "name": "Gem Necklace",
+      "nameZh": "宝石项链",
+      "soundId": 33,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1456875,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080030,
+      "name": "Gold Cup",
+      "nameZh": "金杯",
+      "soundId": 36,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 275280,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080033,
+      "name": "Vintage Typewriter",
+      "nameZh": "老牌打字机",
+      "soundId": 8,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 301920,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080038,
+      "name": "Plaster Sculpture",
+      "nameZh": "仿制石膏雕塑",
+      "soundId": 36,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 4,
+      "contactPrice": 33034,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080039,
+      "name": "Majestic Sculpture",
+      "nameZh": "盛宴雕塑",
+      "soundId": 36,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1581750,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080041,
+      "name": "Gold Snake",
+      "nameZh": "盘蛇金像",
+      "soundId": 36,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1429080,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080047,
+      "name": "Skyhook Synchronized Array Mirror",
+      "nameZh": "富尔顿回收同步阵列透镜",
+      "soundId": 18,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1532375,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080048,
+      "name": "Sergey 1 Satellite Model",
+      "nameZh": "谢尔盖一号卫星模型",
+      "soundId": 18,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 469248,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080049,
+      "name": "Raw Diamond Ore",
+      "nameZh": "粗糙的钻石原矿",
+      "soundId": 18,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 498375,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080050,
+      "name": "Jade Bracelet",
+      "nameZh": "玉石手环",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 456619,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408080054,
+      "name": "Gold Pen",
+      "nameZh": "金饰钢笔",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 458373,
+      "category": "Collectibles"
+    },
+    {
+      "id": 408090001,
+      "name": "Document",
+      "nameZh": "文件",
+      "soundId": 35,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1836,
+      "category": "Paper"
+    },
+    {
+      "id": 408090002,
+      "name": "Hardcover",
+      "nameZh": "硬壳笔记本",
+      "soundId": 37,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 3,
+      "contactPrice": 962,
+      "category": "Paper"
+    },
+    {
+      "id": 408090004,
+      "name": "Folder",
+      "nameZh": "维修手册",
+      "soundId": 37,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 53346,
+      "category": "Paper"
+    },
+    {
+      "id": 408090019,
+      "name": "Gungnir Blueprint Fragments",
+      "nameZh": "冈格尼尔蓝图残页",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 183453,
+      "category": "Paper"
+    },
+    {
+      "id": 408100001,
+      "name": "Gas Analyzer",
+      "nameZh": "气体分析仪",
+      "soundId": 10,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6203,
+      "category": "Instruments"
+    },
+    {
+      "id": 408100002,
+      "name": "Air Tightness Tester",
+      "nameZh": "气密性检测仪",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 6241,
+      "category": "Instruments"
+    },
+    {
+      "id": 408100005,
+      "name": "Wave Filter",
+      "nameZh": "滤波器",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1453,
+      "category": "Instruments"
+    },
+    {
+      "id": 408100007,
+      "name": "Oscilloscope",
+      "nameZh": "示波器",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 11934,
+      "category": "Instruments"
+    },
+    {
+      "id": 408100011,
+      "name": "Antenna",
+      "nameZh": "天线",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 62343,
+      "category": "Instruments"
+    },
+    {
+      "id": 408100012,
+      "name": "Gimbal",
+      "nameZh": "平衡仪",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 11188,
+      "category": "Instruments"
+    },
+    {
+      "id": 408100013,
+      "name": "Light Meter",
+      "nameZh": "测光表",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5898,
+      "category": "Instruments"
+    },
+    {
+      "id": 408120001,
+      "name": "Weapon Parts",
+      "nameZh": "武器零件",
+      "soundId": 9,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1877,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120002,
+      "name": "Cannon Shell",
+      "nameZh": "炮弹",
+      "soundId": 18,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12041,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120003,
+      "name": "Paracord",
+      "nameZh": "伞绳",
+      "soundId": 3,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6622,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120005,
+      "name": "Military Canteen",
+      "nameZh": "军用水壶",
+      "soundId": 36,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 980,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120008,
+      "name": "Rangefinder Binoculars",
+      "nameZh": "测距望远镜",
+      "soundId": 9,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 6279,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120009,
+      "name": "Portable Transceiver",
+      "nameZh": "无线对讲机",
+      "soundId": 9,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6317,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120010,
+      "name": "Military Radio",
+      "nameZh": "军用电台",
+      "soundId": 38,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 62943,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120011,
+      "name": "Receiver",
+      "nameZh": "讯号接收器",
+      "soundId": 10,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 3,
+      "contactPrice": 1897,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120012,
+      "name": "Signal Jammer",
+      "nameZh": "讯号干扰器",
+      "soundId": 10,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 3,
+      "contactPrice": 1917,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120013,
+      "name": "TI Module",
+      "nameZh": "热成像模组",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 6,
+      "contactPrice": 1332000,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120014,
+      "name": "Radio",
+      "nameZh": "电台",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 12148,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120017,
+      "name": "Leveler",
+      "nameZh": "水平仪",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 167832,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120019,
+      "name": "Target Positioning Module",
+      "nameZh": "目标定位器模组",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1498500,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408120020,
+      "name": "Laser Pointer Module",
+      "nameZh": "雷射指示器模组",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 183816,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 408140001,
+      "name": "Game Console",
+      "nameZh": "游戏机",
+      "soundId": 10,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 53946,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140005,
+      "name": "DVD",
+      "nameZh": "DVD",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 1937,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140014,
+      "name": "Classic Radio",
+      "nameZh": "老式收音机",
+      "soundId": 38,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 3,
+      "contactPrice": 989,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140015,
+      "name": "Lens",
+      "nameZh": "镜头",
+      "soundId": 9,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 5936,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140016,
+      "name": "Camera",
+      "nameZh": "照相机",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 11295,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140019,
+      "name": "Gold Phone",
+      "nameZh": "金色手机",
+      "soundId": 10,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 50949,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140021,
+      "name": "Data Cable",
+      "nameZh": "数据线",
+      "soundId": 10,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 6355,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140022,
+      "name": "Video Camera",
+      "nameZh": "民用摄影机",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 186480,
+      "category": "Electronics"
+    },
+    {
+      "id": 408140024,
+      "name": "Laptop Computer",
+      "nameZh": "笔记型电脑",
+      "soundId": 10,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 189144,
+      "category": "Electronics"
+    },
+    {
+      "id": 498010001,
+      "name": "Portable Fuel Canister",
+      "nameZh": "便携式燃料气罐",
+      "soundId": 2,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 11885,
+      "category": "Flammables"
+    },
+    {
+      "id": 498010003,
+      "name": "Magnesium Flint",
+      "nameZh": "镁条打火石",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 41511,
+      "category": "Flammables"
+    },
+    {
+      "id": 498020001,
+      "name": "Arched Corrugated Steel Plate",
+      "nameZh": "拱形波纹钢板",
+      "soundId": 17,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 182893,
+      "category": "Building Materials"
+    },
+    {
+      "id": 498040001,
+      "name": "Solar Charger",
+      "nameZh": "可携式太阳能充电器",
+      "soundId": 18,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 39022,
+      "category": "Energy Items"
+    },
+    {
+      "id": 498040002,
+      "name": "Ni-Cd Battery Pack",
+      "nameZh": "镍镉电池组",
+      "soundId": 18,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 40266,
+      "category": "Energy Items"
+    },
+    {
+      "id": 498040003,
+      "name": "Capacitance Analyzer",
+      "nameZh": "电容分析仪",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12161,
+      "category": "Energy Items"
+    },
+    {
+      "id": 498060001,
+      "name": "Space Lab Toybox",
+      "nameZh": "\"航太实验室\"玩具箱",
+      "soundId": 22,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 191387,
+      "category": "Household Items"
+    },
+    {
+      "id": 498060003,
+      "name": "Quantum 2000 Toy Robot",
+      "nameZh": "量子2000玩具机器人",
+      "soundId": 18,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1394769,
+      "category": "Household Items"
+    },
+    {
+      "id": 498060004,
+      "name": "Voice of Civilization Gold Record",
+      "nameZh": "文明之声金唱片",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1369290,
+      "category": "Household Items"
+    },
+    {
+      "id": 498060005,
+      "name": "Northern Stars Amber Drink",
+      "nameZh": "「北境星辰」琥珀珍饮",
+      "soundId": 30,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1548111,
+      "category": "Household Items"
+    },
+    {
+      "id": 498060006,
+      "name": "Toland Access Card",
+      "nameZh": "托兰德工作证",
+      "soundId": 22,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 42755,
+      "category": "Household Items"
+    },
+    {
+      "id": 498070001,
+      "name": "Handheld Tester",
+      "nameZh": "手持式分析仪",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12165,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070002,
+      "name": "EEG",
+      "nameZh": "脑电接收装置",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1524789,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070003,
+      "name": "Blood Glucose Meter Set",
+      "nameZh": "血糖仪套装",
+      "soundId": 22,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 53280,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070004,
+      "name": "Electronic Stethoscope",
+      "nameZh": "电子听诊器",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 11954,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070009,
+      "name": "Infrared Therapy Lamp",
+      "nameZh": "红外线治疗灯",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 122544,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070010,
+      "name": "Mutant Heart Sample",
+      "nameZh": "变异体心脏样本",
+      "soundId": 30,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 5,
+      "contactPrice": 257520,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070011,
+      "name": "Pheromone Test Kit",
+      "nameZh": "费洛蒙试剂盒",
+      "soundId": 24,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 259296,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070012,
+      "name": "Blocker Injector",
+      "nameZh": "阻断剂注射枪",
+      "soundId": 24,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 42133,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498070013,
+      "name": "Mutated Tissue Mass",
+      "nameZh": "畸变组织块",
+      "soundId": 36,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 43377,
+      "category": "Miscellaneous Medical Item"
+    },
+    {
+      "id": 498080001,
+      "name": "Gilded Cage Music Box",
+      "nameZh": "\"鎏金羽宫\"音乐盒",
+      "soundId": 22,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1620600,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080002,
+      "name": "Phaethon's Clock",
+      "nameZh": "法厄同之钟",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1531800,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080003,
+      "name": "\"Dawn\"",
+      "nameZh": "《黎明》",
+      "soundId": 22,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1642800,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080005,
+      "name": "Real Matrix",
+      "nameZh": "真实矩阵",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1507263,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080006,
+      "name": "Ancient Golden Mask Replica",
+      "nameZh": "古国黄金面具复制品",
+      "soundId": 22,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1647474,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080008,
+      "name": "Hefra Egg",
+      "nameZh": "赫芙拉彩蛋",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1363385,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080009,
+      "name": "Lyre",
+      "nameZh": "里拉琴",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1366000,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080010,
+      "name": "Heavenly Sphere",
+      "nameZh": "承天浑仪",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1368615,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080011,
+      "name": "Peacock Fan",
+      "nameZh": "孔雀羽扇",
+      "soundId": 22,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1371231,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080016,
+      "name": "Amber Heart of Heaven",
+      "nameZh": "琥珀天心",
+      "soundId": 18,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1395613,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080017,
+      "name": "Optoelectronic Hyperspace Model",
+      "nameZh": "超维空间光电模型",
+      "soundId": 36,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1371484,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080018,
+      "name": "\"Destiny\" Gold Clay Tablet",
+      "nameZh": "「天命」金泥板",
+      "soundId": 6,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1397806,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080019,
+      "name": "Star of Kamona Pendant",
+      "nameZh": "「卡莫纳之星」吊坠",
+      "soundId": 33,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1386839,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498080025,
+      "name": "Double-Neck Lute",
+      "nameZh": "牙雕双颈鲁特琴",
+      "soundId": 14,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1544333,
+      "category": "Collectibles"
+    },
+    {
+      "id": 498090001,
+      "name": "Voss' Journal",
+      "nameZh": "维塞尔日记",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 53446,
+      "category": "Paper"
+    },
+    {
+      "id": 498090002,
+      "name": "Space Boy Comic",
+      "nameZh": "《行星之子》漫画",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6307,
+      "category": "Paper"
+    },
+    {
+      "id": 498090008,
+      "name": "Dried Flower Bookmark",
+      "nameZh": "干花书签",
+      "soundId": 35,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 40888,
+      "category": "Paper"
+    },
+    {
+      "id": 498090009,
+      "name": "Bundle of Rice Paper",
+      "nameZh": "一叠宣纸",
+      "soundId": 37,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12219,
+      "category": "Paper"
+    },
+    {
+      "id": 498090010,
+      "name": "Mutant Evolution Sketch",
+      "nameZh": "变异体形象手绘画",
+      "soundId": 35,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 243312,
+      "category": "Paper"
+    },
+    {
+      "id": 498100001,
+      "name": "Aerospace Navigator",
+      "nameZh": "航太导航仪",
+      "soundId": 22,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1598400,
+      "category": "Instruments"
+    },
+    {
+      "id": 498100002,
+      "name": "K7-L Cipher Machine",
+      "nameZh": "K7-L密码机",
+      "soundId": 36,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 185269,
+      "category": "Instruments"
+    },
+    {
+      "id": 498100003,
+      "name": "Three-Axis Gyro Controller Prototype",
+      "nameZh": "三轴陀螺仪控制器原型样品",
+      "soundId": 18,
+      "size": [
+        3,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1397385,
+      "category": "Instruments"
+    },
+    {
+      "id": 498100004,
+      "name": "Handheld Receiver",
+      "nameZh": "手持定位讯号接收机",
+      "soundId": 18,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12022,
+      "category": "Instruments"
+    },
+    {
+      "id": 498100005,
+      "name": "Handheld Salinity Meter",
+      "nameZh": "手持式盐度计",
+      "soundId": 18,
+      "size": [
+        1,
+        1
+      ],
+      "rarity": 5,
+      "contactPrice": 39644,
+      "category": "Instruments"
+    },
+    {
+      "id": 498100006,
+      "name": "Handheld Calculator",
+      "nameZh": "手持式计算机",
+      "soundId": 18,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12104,
+      "category": "Instruments"
+    },
+    {
+      "id": 498120001,
+      "name": "Military Tool Kit",
+      "nameZh": "军用单兵工具包",
+      "soundId": 22,
+      "size": [
+        2,
+        1
+      ],
+      "rarity": 4,
+      "contactPrice": 12227,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 498120003,
+      "name": "T-147 Individual Communication Device",
+      "nameZh": "T-147单兵通讯装置",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 5,
+      "contactPrice": 53724,
+      "category": "Miscellaneous Military Item"
+    },
+    {
+      "id": 498140001,
+      "name": "Prototype Calculation Module",
+      "nameZh": "原型电脑验算模组",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1509600,
+      "category": "Electronics"
+    },
+    {
+      "id": 498140003,
+      "name": "Capsule TV",
+      "nameZh": "胶囊电视",
+      "soundId": 18,
+      "size": [
+        2,
+        3
+      ],
+      "rarity": 6,
+      "contactPrice": 1629947,
+      "category": "Electronics"
+    },
+    {
+      "id": 498140004,
+      "name": "Personal Digital Assistant",
+      "nameZh": "个人数位助理",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 12090,
+      "category": "Electronics"
+    },
+    {
+      "id": 498140005,
+      "name": "MRID Clamshell Laptop",
+      "nameZh": "MRID翻盖式笔电",
+      "soundId": 18,
+      "size": [
+        2,
+        2
+      ],
+      "rarity": 6,
+      "contactPrice": 1512222,
+      "category": "Electronics"
+    },
+    {
+      "id": 498140006,
+      "name": "GU-470 Portable Recorder",
+      "nameZh": "GU-470可携式录音机",
+      "soundId": 22,
+      "size": [
+        1,
+        2
+      ],
+      "rarity": 4,
+      "contactPrice": 6327,
+      "category": "Electronics"
+    }
+  ]
+}
