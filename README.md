@@ -29,3 +29,7 @@ py -m venv .venv
 ## 数据来源
 
 音效与物品分组来自社区维护的 [ABI Builder 战地商人页面](https://abibuilder.com/merchant)，中文名称来自 [abi-assets 游戏本地化数据](https://github.com/hexaov91/abi-assets/tree/main/localization/game)，图标来自 ABI Builder 的物品图片资源。参考表版本：`1.0.0.151.4`。本项目与游戏官方及上述社区项目无关联。
+
+## 开源协议
+
+本项目编写的程序代码与文档采用 [MIT 协议](LICENSE)。游戏音效、物品图片和游戏数据不属于 MIT 授权范围，详见 [第三方资源说明](THIRD_PARTY_ASSETS.md)。
