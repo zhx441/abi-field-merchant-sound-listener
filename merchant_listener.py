@@ -22,6 +22,20 @@ from tkinter import ttk, messagebox
 BASE = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
 CATALOG = json.loads((BASE / 'catalog.json').read_text(encoding='utf-8'))
 SOUNDS_BY_ID = {sound['id']: sound for sound in CATALOG['sounds']}
+CATEGORY_ZH = {
+    'Building Materials': '建筑材料',
+    'Collectibles': '收藏品',
+    'Computer Parts': '电脑配件',
+    'Electronics': '电子产品',
+    'Energy Items': '能源物品',
+    'Flammables': '易燃品',
+    'Household Items': '家居用品',
+    'Instruments': '仪器',
+    'Miscellaneous Medical Item': '医疗物品',
+    'Miscellaneous Military Item': '军用物品',
+    'Paper': '纸制品',
+    'Tools': '工具',
+}
 SAMPLE_RATE = 24000
 CAPTURE_RATE = 48000
 WINDOW_SECONDS = 2.3
@@ -207,6 +221,7 @@ class App:
         self.results.configure(yscrollcommand=scrollbar.set)
         self.results.tag_configure('group', foreground='#82c7ed', font=('Microsoft YaHei UI', 11, 'bold'), spacing1=10, spacing3=8)
         self.results.tag_configure('item', foreground='#ecf4fa', font=('Microsoft YaHei UI', 11))
+        self.results.tag_configure('category', foreground='#f3cf85', font=('Microsoft YaHei UI', 9))
         self.results.tag_configure('detail', foreground='#9db1bd', font=('Microsoft YaHei UI', 9))
         ttk.Label(frame, text=f"试听音量已统一 · 匹配分与峰值强度均不是掉落概率 · 数据版本 {CATALOG['data_version']}",
                   foreground='#8ca0ae').pack(anchor='w')
@@ -382,6 +397,8 @@ class App:
                     else:
                         self.results.insert('end', '  •  ')
                     self.results.insert('end', f"{item['nameZh']}  ", 'item')
+                    category = item.get('category', '')
+                    self.results.insert('end', f"[{CATEGORY_ZH.get(category, category or '未分类')}]  ", 'category')
                     for preview_action, label in (('pickup', '▶ 拾起'), ('drop', '▶ 放下')):
                         button = ttk.Button(
                             self.results, text=label, width=7,
