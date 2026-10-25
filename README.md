@@ -2,6 +2,18 @@
 
 Windows 桌面工具，辅助识别《暗区突围：无限》战地商人神秘货物的拾起、放下音效。监听系统播放声音，按声音组展示中文物品名称、类别标签和图片；每件候选物品都有参考音效试听按钮。支持窗口置顶。
 
+## 多语言界面与迷你悬浮窗 / Multi-language UI & mini overlay
+
+- **界面语言切换**：主界面右上角下拉框可实时切换 **中文 / English / Русский**，物品名称、类别、稀有度均按所选语言显示（俄文物品名由社区翻译）。
+- **迷你悬浮窗**：点击「▣ 小窗」可打开一个紧凑的置顶小窗，只显示当前识别结果与候选物品；默认跟随主界面，可拖动、可开启「鼠标穿透」，游戏时遮挡更少。主界面保留完整筛选与试听功能。
+- **设置记忆**：语言、占格筛选、小窗位置等保存在 `settings_local.json`（已被 .gitignore 忽略），下次启动自动恢复。
+- 识别算法（Matcher）与参考音效数据未做任何改动。
+
+- **UI language switch**: live dropdown in the top-right — **中文 / English / Русский**; item names, categories and rarity are localized (Russian item names translated by the community).
+- **Mini overlay**: «▣ Mini window» opens a compact always-on-top panel showing only the current match and candidates; draggable, optional mouse click-through. The main window keeps full filtering and preview features.
+- **Persisted settings**: language, grid filter and overlay position are stored in `settings_local.json` (git-ignored).
+- Recognition logic (Matcher) and reference audio data are untouched.
+
 ## 下载与使用
 
 下载 `MerchantSoundListener_CN_v9.exe`，双击运行。在“游戏播放设备”中选择游戏声音实际输出的设备，点击“开始监听”，然后拖动神秘货物。可根据货物占格筛选候选物品，并点击“▶ 拾起”或“▶ 放下”与游戏音效对照。
