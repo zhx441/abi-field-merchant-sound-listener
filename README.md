@@ -5,20 +5,22 @@ Windows 桌面工具，辅助识别《暗区突围：无限》战地商人神秘
 ## 多语言界面与迷你悬浮窗 / Multi-language UI & mini overlay
 
 - **界面语言切换**：主界面右上角下拉框可实时切换 **中文 / English / Русский**，物品名称、类别、稀有度均按所选语言显示（俄文物品名由社区翻译）。
-- **迷你悬浮窗**：点击「▣ 小窗」可打开一个紧凑的置顶小窗，只显示当前识别结果与候选物品；默认跟随主界面，可拖动、可开启「鼠标穿透」，游戏时遮挡更少。主界面保留完整筛选与试听功能。
-- **设置记忆**：语言、占格筛选、小窗位置等保存在 `settings_local.json`（已被 .gitignore 忽略），下次启动自动恢复。
+- **迷你悬浮窗**：点击「▣ 小窗」可打开置顶小窗，显示识别结果及候选物品类别。小窗可拖动，可在主界面开关鼠标穿透。主界面提供占格筛选与试听。
+- **设置记忆**：语言、占格筛选、小窗位置等保存在 `%LOCALAPPDATA%\MerchantSoundListener\settings_local.json`，下次启动自动恢复。
 - 识别算法（Matcher）与参考音效数据未做任何改动。
 
 - **UI language switch**: live dropdown in the top-right — **中文 / English / Русский**; item names, categories and rarity are localized (Russian item names translated by the community).
 - **Mini overlay**: «▣ Mini window» opens a compact always-on-top panel showing only the current match and candidates; draggable, optional mouse click-through. The main window keeps full filtering and preview features.
-- **Persisted settings**: language, grid filter and overlay position are stored in `settings_local.json` (git-ignored).
+- **Persisted settings**: language, grid filter and overlay position are saved in `%LOCALAPPDATA%\MerchantSoundListener\settings_local.json`.
 - Recognition logic (Matcher) and reference audio data are untouched.
 
 ## 下载与使用
 
-下载 `MerchantSoundListener_CN_v9.exe`，双击运行。在“游戏播放设备”中选择游戏声音实际输出的设备，点击“开始监听”，然后拖动神秘货物。可根据货物占格筛选候选物品，并点击“▶ 拾起”或“▶ 放下”与游戏音效对照。
+从 [v10 发布页](https://github.com/zhx441/abi-field-merchant-sound-listener/releases/tag/v10)下载 `MerchantSoundListener_CN_v10.exe`，双击运行。在“游戏播放设备”中选择游戏声音实际输出的设备，点击“开始监听”，然后拖动神秘货物。可根据货物占格筛选候选物品，并点击“▶ 拾起”或“▶ 放下”与游戏音效对照。
 
 窗口置顶默认开启，可在主界面取消。游戏使用独占全屏时，建议切换到无边框窗口模式。
+
+本工具由社区维护，未获得游戏官方的兼容性确认。游戏内使用受 [《暗区突围：无限》用户协议](https://store.steampowered.com/eula/2073620_eula_0) 约束。
 
 **匹配分和音效峰值强度都不是掉落概率。** 多件物品可能共用同一声音组，仅靠音频无法区分组内物品。参考表包含 38 组音效及 189 件物品；非线性节点探测器不在当前参考表中。
 

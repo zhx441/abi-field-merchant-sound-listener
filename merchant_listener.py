@@ -12,9 +12,12 @@ Recognition logic (Matcher) is unchanged from the original.
 from __future__ import annotations
 
 import ctypes
+from ctypes import wintypes
 import json
+import os
 import queue
 import sys
+import tempfile
 import threading
 import time
 from collections import deque
@@ -32,7 +35,10 @@ from tkinter import ttk, messagebox
 BASE = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
 CATALOG = json.loads((BASE / 'catalog.json').read_text(encoding='utf-8'))
 SOUNDS_BY_ID = {sound['id']: sound for sound in CATALOG['sounds']}
-SETTINGS_PATH = BASE / 'settings_local.json'
+SETTINGS_PATH = (
+    Path(os.environ.get('LOCALAPPDATA') or Path.home() / 'AppData' / 'Local')
+    / 'MerchantSoundListener' / 'settings_local.json'
+)
 
 
 # ---------------------------------------------------------------- localization
@@ -67,6 +73,8 @@ RARITY_L10N = {
 }
 
 NAME_RU = {
+    '"Dawn"': '«Рассвет»',
+    '"Destiny" Gold Clay Tablet': 'Золотая глиняная табличка «Судьба»',
     'Acoustic Panel': 'Акустическая панель',
     'Aerospace Navigator': 'Аэрокосмический навигатор',
     'Air Tightness Tester': 'Тестер герметичности',
@@ -645,9 +653,9 @@ class MiniOverlay:
         self.win.attributes('-topmost', True)
         self.win.configure(bg=BORDER)
         geometry = app.settings.get('mini_geo', '')
-        if geometry:
-            self.win.geometry(geometry)
-        else:
+        try:
+            self.win.geometry(geometry or f'+{self.win.winfo_screenwidth() - 340}+120')
+        except (tk.TclError, TypeError):
             self.win.geometry(f'+{self.win.winfo_screenwidth() - 340}+120')
         self.visible = True
         self._drag_pos = None
@@ -679,13 +687,13 @@ class MiniOverlay:
         self.list.tag_configure('rich', foreground=GOLD, font=(font_family(app.lang), 9, 'bold'))
         self.photos: list[ImageTk.PhotoImage] = []
         self.win.attributes('-alpha', 0.97)
-        self._apply_click_through()
-        self._keep_top()
+        self.apply_click_through()
 
-    def _keep_top(self) -> None:
-        if self.visible:
-            self.win.attributes('-topmost', True)
-            self.win.after(2000, self._keep_top)
+    def show(self) -> None:
+        self.visible = True
+        self.win.deiconify()
+        self.win.attributes('-topmost', True)
+        self.apply_click_through()
 
     def _drag_start(self, event) -> None:
         self._drag_pos = (event.x, event.y)
@@ -702,24 +710,29 @@ class MiniOverlay:
         self.win.withdraw()
         self.app.on_mini_hidden()
 
-    def destroy(self) -> None:
-        self.visible = False
-        self.win.destroy()
-
     def _apply_click_through(self) -> None:
-        try:
-            hwnd = ctypes.windll.user32.GetParent(self.win.winfo_id())
-            style = ctypes.windll.user32.GetWindowLongW(hwnd, -16)
-            if self.app.click_through.get():
-                style |= 0x80000 | 0x20  # WS_EX_LAYERED | WS_EX_TRANSPARENT
-            else:
-                style &= ~0x20
-            ctypes.windll.user32.SetWindowLongW(hwnd, -16, style)
-        except Exception:
-            pass
+        user32 = ctypes.windll.user32
+        get_parent = user32.GetParent
+        get_parent.argtypes = (wintypes.HWND,)
+        get_parent.restype = wintypes.HWND
+        hwnd = get_parent(self.win.winfo_id())
+        if not hwnd:
+            return
+        get_style = user32.GetWindowLongW
+        get_style.argtypes = (wintypes.HWND, ctypes.c_int)
+        get_style.restype = wintypes.LONG
+        set_style = user32.SetWindowLongW
+        set_style.argtypes = (wintypes.HWND, ctypes.c_int, wintypes.LONG)
+        set_style.restype = wintypes.LONG
+        ex_style_index = -20  # GWL_EXSTYLE
+        transparent = 0x20  # WS_EX_TRANSPARENT
+        style = get_style(hwnd, ex_style_index)
+        style = style | transparent if self.app.click_through.get() else style & ~transparent
+        set_style(hwnd, ex_style_index, style)
 
     def apply_click_through(self) -> None:
-        self.win.after(50, self._apply_click_through)
+        if sys.platform == 'win32' and self.visible:
+            self.win.after_idle(self._apply_click_through)
 
     def set_language(self, lang: str) -> None:
         self.header.itemconfigure(self.title_id, text=STR[lang]['mini_title'])
@@ -744,7 +757,8 @@ class MiniOverlay:
                 self.list.image_create('end', image=row['photo'], padx=6)
             self.list.insert('end', row['name'] + '\n', f"r{row['rarity']}")
             price_tag = 'rich' if row['price'] >= 1_000_000 else 'muted'
-            self.list.insert('end', f"   {row['size']}  ·  {fmt_price(row['price'])}\n", price_tag)
+            self.list.insert('end', f"   {row['category']}  ·  {row['size']}  ·  ", 'muted')
+            self.list.insert('end', f"{fmt_price(row['price'])}\n", price_tag)
         hidden = len(rows) - len(shown)
         if hidden > 0:
             more = STR[self.app.lang]['mini_more'].replace('{n}', str(hidden))
@@ -756,9 +770,10 @@ class App:
     def __init__(self, root: tk.Tk, lang: str = None) -> None:
         self.root = root
         try:
-            self.settings = json.loads(SETTINGS_PATH.read_text(encoding='utf-8'))
-        except Exception:
-            self.settings = {}
+            settings = json.loads(SETTINGS_PATH.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            settings = {}
+        self.settings = settings if isinstance(settings, dict) else {}
         self.lang = lang or self.settings.get('lang', 'zh')
         if self.lang not in LANGS:
             self.lang = 'zh'
@@ -871,7 +886,8 @@ class App:
         self.listen_button = PillButton(controls, self.L('start'), self._toggle, height=30, lang=self.lang)
         self.listen_button.pack(side='left')
         ttk.Button(controls, text=self.L('recognize'), command=lambda: self._submit(False)).pack(side='left', padx=8)
-        ttk.Checkbutton(controls, text=self.L('auto'), variable=self.auto).pack(side='left', padx=(4, 8))
+        ttk.Checkbutton(controls, text=self.L('auto'), variable=self.auto,
+                        command=self._save).pack(side='left', padx=(4, 8))
         ttk.Checkbutton(controls, text=self.L('pin'), variable=self.pin_window, command=self._toggle_pin).pack(side='left', padx=4)
         ttk.Checkbutton(controls, text=self.L('clickthrough'), variable=self.click_through,
                         command=lambda: (self._save(), self.mini.apply_click_through() if self.mini else None)).pack(side='left', padx=4)
@@ -916,15 +932,12 @@ class App:
             self._render(self.last_ranked, self.last_metric)
 
     def size_code(self) -> str:
-        for code in SIZES:
-            if SIZE_DISPLAY[self.lang].get(code) == self.size.get():
-                return code
-        display_any_by_lang = {lang: SIZE_DISPLAY[lang]['any'] for lang in LANGS}
-        if self.size.get() in display_any_by_lang.values():
-            return 'any'
-        for lang in LANGS:
-            for code in SIZES:
-                if SIZE_DISPLAY[lang][code] == self.size.get():
+        value = self.size.get()
+        if value in SIZES:
+            return value
+        for labels in SIZE_DISPLAY.values():
+            for code, label in labels.items():
+                if label == value:
                     return code
         return 'any'
 
@@ -963,17 +976,33 @@ class App:
             self._mini_refresh()
 
     def _save(self) -> None:
+        self.settings.update(auto=self.auto.get(), pin=self.pin_window.get(),
+                             clickthrough=self.click_through.get())
+        temporary_path = None
         try:
-            SETTINGS_PATH.write_text(json.dumps(self.settings, ensure_ascii=False, indent=2), encoding='utf-8')
-        except Exception:
+            SETTINGS_PATH.parent.mkdir(parents=True, exist_ok=True)
+            with tempfile.NamedTemporaryFile(
+                mode='w', encoding='utf-8', dir=SETTINGS_PATH.parent, delete=False,
+            ) as temporary:
+                temporary_path = Path(temporary.name)
+                json.dump(self.settings, temporary, ensure_ascii=False, indent=2)
+            temporary_path.replace(SETTINGS_PATH)
+        except OSError:
             pass
+        finally:
+            if temporary_path is not None:
+                try:
+                    temporary_path.unlink(missing_ok=True)
+                except OSError:
+                    pass
 
     # ------------------------------------------------------------ mini overlay
 
     def _mini_show(self) -> None:
-        if self.mini and self.mini.visible:
-            return
-        self.mini = MiniOverlay(self)
+        if self.mini is None:
+            self.mini = MiniOverlay(self)
+        elif not self.mini.visible:
+            self.mini.show()
         self.mini.set_language(self.lang)
         self._apply_banner_state()
         self.settings['mini'] = True
@@ -996,8 +1025,10 @@ class App:
         for item in rows[:8]:
             photo = self._item_photo(item, 26)
             name = self._item_name(item)
+            category = item.get('category')
             prepared.append({'photo': photo, 'name': name, 'rarity': item.get('rarity') or 1,
                              'price': item.get('contactPrice', 0),
+                             'category': localized_category(category, self.lang) if category else self.L('no_category'),
                              'size': f"{item['size'][0]}×{item['size'][1]}"})
         self.mini.show_match(self.top_result.get(), getattr(self, '_banner_kind', 'idle'), prepared)
 
@@ -1024,7 +1055,6 @@ class App:
 
     def _toggle_pin(self) -> None:
         self.root.attributes('-topmost', self.pin_window.get())
-        self.settings['pin'] = self.pin_window.get()
         self._save()
 
     def _capture(self, device) -> None:
@@ -1269,9 +1299,6 @@ class App:
 
     def _close(self) -> None:
         self.listening = False
-        self.settings['auto'] = self.auto.get()
-        self.settings['pin'] = self.pin_window.get()
-        self.settings['clickthrough'] = self.click_through.get()
         self._save()
         self.root.destroy()
 
